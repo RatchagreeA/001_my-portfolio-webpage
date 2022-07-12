@@ -1,68 +1,21 @@
 import "./App.scss";
+import { v4 as uuidv4 } from "uuid";
+import myData from "./myData.json";
 import InfoDetail from "./component/InfoDetail";
-const langSkillInfo = [
-    {
-        topic: "Thai",
-        detail: "Native speak, read and write",
-    },
-    {
-        topic: "English",
-        detail: "Intermediate speak, read and write",
-    },
-    {
-        topic: "Japanese",
-        detail: "Japanese-Language Proficiency Test Level N3",
-    },
-];
-const personalInfo = [
-    {
-        topic: "Name",
-        detail: "Ratchagree Amornlikitsin",
-    },
-    {
-        topic: "Date of birth",
-        detail: "12 March 1997",
-    },
-    {
-        topic: "Email",
-        detail: "ratchagree@gmail.com",
-    },
-];
-const proSkillInfo = [
-    {
-        topic: "",
-        detail: "HTML5, CSS3, JavaScript",
-    },
-    {
-        topic: "",
-        detail: "React",
-    },
-    {
-        topic: "",
-        detail: "Python",
-    },
-    {
-        topic: "",
-        detail: "Java",
-    },
-    {
-        topic: "",
-        detail: "C",
-    },
-    {
-        topic: "",
-        detail: "VBA Excel",
-    },
-    {
-        topic: "",
-        detail: "MATLAB (m-script)",
-    },
-    {
-        topic: "",
-        detail: "Simulink, Stateflow",
-    },
-];
+import ExpDetail from "./component/ExpDetail";
+import MyProject from "./component/MyProject";
+import BtnLink from "./component/BtnLink";
+import ContactLink from "./component/ContactLink";
+
 function App() {
+    const langSkillInfo = myData.langSkillInfo;
+    const personalInfo = myData.personalInfo;
+    const proSkillInfo = myData.proSkillInfo;
+    const eduInfo = myData.eduInfo;
+    const workInfo = myData.workInfo;
+    const projectInfo = myData.projectInfo;
+    const showAll = myData.showAll;
+    const contactInfo = myData.contactInfo;
     return (
         <div className="container">
             {/* <!-- START NAV SECTION --> */}
@@ -112,17 +65,17 @@ function App() {
                 <div className="info-container">
                     <div className="info personal-info">
                         <h2>Personal information</h2>
-                        <InfoDetail Info={personalInfo} />
+                        <InfoDetail Info={personalInfo} uuid={uuidv4} />
                     </div>
 
                     <div className="info language-skill">
                         <h2>Language skills</h2>
-                        <InfoDetail Info={langSkillInfo} />
+                        <InfoDetail Info={langSkillInfo} uuid={uuidv4} />
                     </div>
 
                     <div className="info Programming-skill">
                         <h2>Programming skills</h2>
-                        <InfoDetail Info={proSkillInfo} />
+                        <InfoDetail Info={proSkillInfo} uuid={uuidv4} />
                     </div>
                 </div>
             </section>
@@ -134,81 +87,23 @@ function App() {
             <section id="experience">
                 <div className="exp-container">
                     <div className="exp">
-                        <div className="exp-class">
+                        <div className="exp-type">
                             <h2>
                                 <i className="fa-solid fa-graduation-cap"></i>
                                 Education
                             </h2>
                         </div>
-                        <div className="detail-container">
-                            <div className="detail">
-                                <h3>Thammasat University</h3>
-                                <p>
-                                    Bachelor’s Degree in Electrical Engineering
-                                    (2015 – 2019)
-                                </p>
-                            </div>
-                            <div className="detail">
-                                <h3>Rittiyawannalai School, Bangkok</h3>
-                                <p>
-                                    Certificate of General Education (2009 –
-                                    2015)
-                                </p>
-                            </div>
-                        </div>
+                        <ExpDetail Info={eduInfo} uuid={uuidv4} />
                     </div>
 
                     <div className="exp">
-                        <div className="exp-class">
+                        <div className="exp-type">
                             <h2>
                                 <i className="fa-solid fa-laptop-code"></i>
                                 Work Experiences
                             </h2>
                         </div>
-                        <div className="detail-container">
-                            <div className="detail">
-                                <h3 className="position">Software Engineer</h3>
-                                <p className="company">
-                                    Toyota Tsusho Denso Electronics Thailand
-                                    Co., Ltd (2019 - Present)
-                                </p>
-                                <ul className="detail-list">
-                                    <li>
-                                        Development and Testing on ECU software
-                                        (Embedded) by using MATLAB, Simulink and
-                                        C language
-                                    </li>
-                                    <li>
-                                        Create test pattern for software testing
-                                        to confirm functional of software work
-                                        product
-                                    </li>
-                                    <li>
-                                        Develop tool for support automate task
-                                        by using M-script and VBA Excel
-                                    </li>
-                                    <li>
-                                        Organize collaboration activity with the
-                                        university to promote the company
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div className="detail">
-                                <h3 className="position">Trainee</h3>
-                                <p className="company">
-                                    Shinetsu Works Co., Ltd. (2018 : Jun – Aug)
-                                </p>
-                                <ul className="detail-list">
-                                    <li>
-                                        Participate industrial Internship
-                                        Program in Japan
-                                    </li>
-                                    <li>Operate product assembly line</li>
-                                    <li>Products testing</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <ExpDetail Info={workInfo} uuid={uuidv4} />
                     </div>
                 </div>
             </section>
@@ -221,89 +116,8 @@ function App() {
                 <h2 className="projects-section-header">
                     These are some of my projects
                 </h2>
-                <div className="projects-grid">
-                    <a
-                        href="https://codepen.io/ratchagreea/pen/zYpQZmB"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="project"
-                    >
-                        <img
-                            className="project-image"
-                            src="https://codepen.io/ratchagreea/pen/zYpQZmB/image/small.png"
-                            alt="project"
-                        />
-                        <p className="project-title">
-                            <span className="code">&lt;</span>
-                            Product Landing Page
-                            <span className="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-
-                    <a
-                        href="https://codepen.io/ratchagreea/pen/WNdmKYa"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="project"
-                    >
-                        <img
-                            className="project-image"
-                            src="https://codepen.io/ratchagreea/pen/WNdmKYa/image/small.png"
-                            alt="project"
-                        />
-                        <p className="project-title">
-                            <span className="code">&lt;</span>
-                            Survey Form
-                            <span className="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-
-                    <a
-                        href="https://codepen.io/ratchagreea/pen/XWVoWrb"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="project"
-                    >
-                        <img
-                            className="project-image"
-                            src="https://codepen.io/ratchagreea/pen/XWVoWrb/image/small.png"
-                            alt="project"
-                        />
-                        <p className="project-title">
-                            <span className="code">&lt;</span>
-                            Tribute Page
-                            <span className="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-
-                    <a
-                        href="https://codepen.io/ratchagreea/pen/qBxWypY"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="project"
-                    >
-                        <img
-                            className="project-image"
-                            src="https://codepen.io/ratchagreea/pen/qBxWypY/image/small.png"
-                            alt="project"
-                        />
-                        <p className="project-title">
-                            <span className="code">&lt;</span>
-                            Technical Documentation Page
-                            <span className="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-                </div>
-
-                <a
-                    href="https://codepen.io/ratchagreea"
-                    className="btn-show-all"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    Show all
-                    <i className="fas fa-chevron-right"></i>
-                </a>
+                <MyProject Info={projectInfo} uuid={uuidv4} />
+                <BtnLink Info={showAll} key={uuidv4()} />
             </section>
 
             {/* <!-- END PROJECTS SECTION --> */}
@@ -315,42 +129,7 @@ function App() {
                     <h2>Let's work together...</h2>
                     <p>Contacts</p>
                 </div>
-                <div className="contact-links">
-                    <a
-                        href="https://facebook.com/example"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="contact-details"
-                    >
-                        <i className="fab fa-facebook-square"></i> Facebook
-                    </a>
-                    <a
-                        id="profile-link"
-                        href="https://github.com/example"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn contact-details"
-                    >
-                        <i className="fab fa-github"></i> GitHub
-                    </a>
-                    <a
-                        href="https://twitter.com/example"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn contact-details"
-                    >
-                        <i className="fab fa-twitter"></i> Twitter
-                    </a>
-                    <a
-                        href="mailto:example@example.com"
-                        className="btn contact-details"
-                    >
-                        <i className="fas fa-at"></i> Send a mail
-                    </a>
-                    <a href="tel:555-555-5555" className="btn contact-details">
-                        <i className="fas fa-mobile-alt"></i> Call me
-                    </a>
-                </div>
+                <ContactLink Info={contactInfo} uuid={uuidv4} />
                 <div className="copy-txt">
                     <p>
                         Copyright 2022 by Ratchagree Amornlikitsin. All Rights

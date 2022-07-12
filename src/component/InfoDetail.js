@@ -1,8 +1,8 @@
-function InfoDetail({ Info }) {
+function InfoDetail({ Info, uuid }) {
     return (
         <div className="info-detail">
             {Info.map((ele) => (
-                <p>
+                <p key={uuid()}>
                     {ele.topic && <strong>{`${ele.topic}: `}</strong>}
                     {ele.detail}
                 </p>

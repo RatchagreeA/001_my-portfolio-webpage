@@ -1,0 +1,157 @@
+{
+    "langSkillInfo": [
+        {
+            "topic": "Thai",
+            "detail": "Native speak, read and write"
+        },
+        {
+            "topic": "English",
+            "detail": "Intermediate speak, read and write"
+        },
+        {
+            "topic": "Japanese",
+            "detail": "Japanese-Language Proficiency Test Level N3"
+        }
+    ],
+    "personalInfo": [
+        {
+            "topic": "Name",
+            "detail": "Ratchagree Amornlikitsin"
+        },
+        {
+            "topic": "Date of birth",
+            "detail": "12 March 1997"
+        },
+        {
+            "topic": "Email",
+            "detail": "ratchagree@gmail.com"
+        }
+    ],
+    "proSkillInfo": [
+        {
+            "topic": "",
+            "detail": "HTML5, CSS3, JavaScript"
+        },
+        {
+            "topic": "",
+            "detail": "React"
+        },
+        {
+            "topic": "",
+            "detail": "Python"
+        },
+        {
+            "topic": "",
+            "detail": "Java"
+        },
+        {
+            "topic": "",
+            "detail": "C"
+        },
+        {
+            "topic": "",
+            "detail": "VBA Excel"
+        },
+        {
+            "topic": "",
+            "detail": "MATLAB (m-script)"
+        },
+        {
+            "topic": "",
+            "detail": "Simulink, Stateflow"
+        }
+    ],
+    "eduInfo": [
+        {
+            "topic": "Thammasat University",
+            "detail": "Bachelor’s Degree in Electrical Engineering (2015 – 2019)",
+            "list": []
+        },
+        {
+            "topic": "Rittiyawannalai School, Bangkok",
+            "detail": "Certificate of General Education (2009 – 2015)",
+            "list": []
+        }
+    ],
+    "workInfo": [
+        {
+            "topic": "Software Engineer",
+            "detail": "Toyota Tsusho Denso Electronics Thailand Co., Ltd (2019 - Present)",
+            "list": [
+                "Development and Testing on ECU software (Embedded) by using MATLAB, Simulink and C language",
+                "Create test pattern for software testing to confirm functional of software work product",
+                "Develop tool for support automate task by using M-script and VBA Excel",
+                "Organize collaboration activity with the university to promote the company"
+            ]
+        },
+        {
+            "topic": "Trainee",
+            "detail": "Shinetsu Works Co., Ltd. (2018 : Jun – Aug)",
+            "list": [
+                "Participate industrial Internship Program in Japan",
+                "Operate product assembly line",
+                "Products testing"
+            ]
+        }
+    ],
+    "projectInfo": [
+        {
+            "title": "Product Landing Page",
+            "link": "https://codepen.io/ratchagreea/pen/zYpQZmB",
+            "img": "https://codepen.io/ratchagreea/pen/zYpQZmB/image/small.png"
+        },
+        {
+            "title": "Survey Form",
+            "link": "https://codepen.io/ratchagreea/pen/WNdmKYa",
+            "img": "https://codepen.io/ratchagreea/pen/WNdmKYa/image/small.png"
+        },
+        {
+            "title": "Technical Documentation Page",
+            "link": "https://codepen.io/ratchagreea/pen/qBxWypY",
+            "img": "https://codepen.io/ratchagreea/pen/qBxWypY/image/small.png"
+        },
+        {
+            "title": "Tribute Page",
+            "link": "https://codepen.io/ratchagreea/pen/XWVoWrb",
+            "img": "https://codepen.io/ratchagreea/pen/XWVoWrb/image/small.png"
+        }
+    ],
+    "showAll": {
+        "title": "Show all",
+        "link": "https://codepen.io/ratchagreea",
+        "linkClass": "btn-show-all",
+        "iconClass": "fa-solid fa-folder-open"
+    },
+    "contactInfo": [
+        {
+            "title": "Facebook",
+            "linkClass": "contact-link",
+            "link": "https://facebook.com/",
+            "iconClass": "fab fa-facebook-square"
+        },
+        {
+            "title": "Twitter",
+            "linkClass": "contact-link",
+            "link": "https://twitter.com/",
+            "iconClass": "fab fa-twitter"
+        },
+        {
+            "title": "GitHub",
+            "linkClass": "contact-link",
+            "link": "https://github.com/RatchagreeA",
+            "iconClass": "fab fa-github"
+        },
+        {
+            "title": "Send a mail",
+            "linkClass": "contact-link",
+            "link": "mailto:ratchagree@gmail.com",
+            "iconClass": "fas fa-at"
+        },
+        {
+            "title": "Call me",
+            "linkClass": "contact-link",
+            "link": "tel:+66892358488",
+            "iconClass": "fas fa-mobile-alt"
+        }
+    ]
+}

@@ -189,7 +189,7 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        .exp-class {
+        .exp-type {
             width: 20rem;
             height: 100%;
             font-size: 1.25rem;
@@ -204,8 +204,6 @@ a {
                 font-size: 1.5rem;
                 p {
                     margin-bottom: 0.5rem;
-                }
-                .company {
                     margin-top: 0.3rem;
                 }
                 .detail-list {
@@ -263,14 +261,14 @@ a {
     }
     .btn-show-all {
         display: inline-block;
-        padding: 0.6rem 2rem;
+        padding: 0.6rem 1.5rem;
         border-radius: 2px;
         font-size: 1.5rem;
         background: var(--project-tile-bg-color);
         color: var(--project-tile-txt-color);
         transition: background 0.3s ease-out;
         i {
-            margin-left: 10px;
+            margin-right: 0.7rem;
             transform: translateX(0);
             transition: transform 0.3s ease-out;
         }
@@ -313,7 +311,7 @@ a {
         max-width: 980px;
         margin-top: 4rem;
         flex-wrap: wrap;
-        .contact-details {
+        .contact-link {
             padding: 0.6rem 2rem;
             color: var(--contact-txt-color);
             font-size: 1.5rem;
