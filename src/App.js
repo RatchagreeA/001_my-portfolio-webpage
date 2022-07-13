@@ -1,13 +1,16 @@
 import "./App.scss";
 import { v4 as uuidv4 } from "uuid";
-import myData from "./myData.json";
-import InfoDetail from "./component/InfoDetail";
-import ExpDetail from "./component/ExpDetail";
-import MyProject from "./component/MyProject";
-import BtnLink from "./component/BtnLink";
-import ContactLink from "./component/ContactLink";
+import myImg from "./img/myImg.jpg";
+import myData from "./data/myData.json";
+import InfoDetail from "./components/InfoDetail";
+import ExpDetail from "./components/ExpDetail";
+import MyProject from "./components/MyProject";
+import BtnLink from "./components/BtnLink";
+import ContactLink from "./components/ContactLink";
+import BtnDownload from "./components/BtnDownload";
 
 function App() {
+    const resumeInfo = myData.resumeInfo;
     const langSkillInfo = myData.langSkillInfo;
     const personalInfo = myData.personalInfo;
     const proSkillInfo = myData.proSkillInfo;
@@ -46,14 +49,23 @@ function App() {
 
             <section id="welcome-section" className="welcome">
                 <div className="pro-img">
-                    <img
-                        src="https://cdn.pixabay.com/photo/2022/01/31/12/46/bird-6983434_960_720.jpg"
-                        alt="profile-img"
-                    />
+                    <img src={myImg} alt="profile-img" />
                 </div>
-                <div className="intro-txt">
-                    <h1>Hi, I am Ratchagree</h1>
-                    <p>a software engineer</p>
+                <div className="intro-container">
+                    <div className="intro-txt">
+                        <h1>Hi, I am Ratchagree</h1>
+                        <h4>a software engineer</h4>
+                        <p>
+                            I enjoy learning new knowledge and programming, I am
+                            a fast learner and problem solver with strong
+                            communication skill. I am looking for an opportunity
+                            to improve my knowledge and skill to become a
+                            professional.
+                        </p>
+                    </div>
+                    <div className="btn-container">
+                        <BtnDownload Info={resumeInfo} key={uuidv4()} />
+                    </div>
                 </div>
             </section>
 

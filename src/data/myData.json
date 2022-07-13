@@ -1,4 +1,10 @@
 {
+    "resumeInfo": {
+        "title": "Resume",
+        "linkClass": "info-link",
+        "link": "./data/Ratchagree_A_resume.pdf",
+        "iconClass": "fa-solid fa-file-arrow-down"
+    },
     "langSkillInfo": [
         {
             "topic": "Thai",
@@ -34,7 +40,7 @@
         },
         {
             "topic": "",
-            "detail": "React"
+            "detail": "ReactJS"
         },
         {
             "topic": "",
@@ -95,6 +101,31 @@
         }
     ],
     "projectInfo": [
+        {
+            "title": "25 + 5 Clock",
+            "link": "https://codepen.io/ratchagreea/pen/PoRNgrq",
+            "img": "https://codepen.io/ratchagreea/pen/PoRNgrq/image/small.png"
+        },
+        {
+            "title": "Calculator",
+            "link": "https://codepen.io/ratchagreea/pen/jOzPNBR",
+            "img": "https://codepen.io/ratchagreea/pen/jOzPNBR/image/small.png"
+        },
+        {
+            "title": "Drum Machine",
+            "link": "https://codepen.io/ratchagreea/pen/rNdBxEW",
+            "img": "https://codepen.io/ratchagreea/pen/rNdBxEW/image/small.png"
+        },
+        {
+            "title": "Random Quote Machine",
+            "link": "https://codepen.io/ratchagreea/pen/XWZxmoL",
+            "img": "https://codepen.io/ratchagreea/pen/XWZxmoL/image/small.png"
+        },
+        {
+            "title": "Markdown Previewer",
+            "link": "https://codepen.io/ratchagreea/pen/ExQMmXa",
+            "img": "https://codepen.io/ratchagreea/pen/ExQMmXa/image/small.png"
+        },
         {
             "title": "Product Landing Page",
             "link": "https://codepen.io/ratchagreea/pen/zYpQZmB",

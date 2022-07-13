@@ -16,8 +16,6 @@
 *::before {
     padding: 0;
     margin: 0;
-    // box-sizing: border-box;
-    // border: 2px solid red;
 }
 :root {
     --nav-home-hover-color: #3f3f3f;
@@ -25,6 +23,8 @@
     --nav-txt-color: black;
     --welcome-bg-color: #333;
     --welcome-txt-color: white;
+    --welcome-btn-color: black;
+    --welcome-btn-bg: white;
     --personal-bg-color: #ececec;
     --personal-txt-color: black;
     --exp-bg-color: white;
@@ -124,19 +124,58 @@ a {
     flex-direction: row;
     gap: 3.5rem;
     .pro-img {
-        width: 45%;
-        // aspect-ratio: 1/1;
+        max-width: 400px;
+        max-height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
-        border-radius: 10%;
+        margin: 0 3rem;
         img {
             width: 100%;
+            height: 100%;
+            border-radius: 5%;
         }
     }
-    .intro-txt {
-        font-size: 3rem;
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 2rem;
+        .intro-txt {
+            font-size: 3rem;
+            max-width: 700px;
+            word-wrap: break-word;
+            p {
+                margin-top: 0.5rem;
+                font-size: 1.75rem;
+            }
+        }
+        .btn-container {
+            display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
+            .info-link {
+                display: inline-block;
+                padding: 0.6rem 1.5rem;
+                border-radius: 2px;
+                font-size: 1.5rem;
+                background: var(--welcome-btn-bg);
+                color: var(--welcome-btn-color);
+                transition: background 0.3s ease-out;
+                &:hover {
+                    font-weight: bold;
+                }
+                i {
+                    margin-right: 0.7rem;
+                    transform: translateX(0);
+                    transition: transform 0.3s ease-out;
+                }
+                &:hover i {
+                    transform: translateX(0.5rem);
+                    color: var(--project-tile-hover-color);
+                }
+            }
+        }
     }
 }
 
@@ -345,6 +384,11 @@ a {
     .welcome {
         flex-direction: column;
         text-align: center;
+        .intro-container {
+            .btn-container {
+                justify-content: center;
+            }
+        }
     }
 }
 
