@@ -2,7 +2,7 @@
     "resumeInfo": {
         "title": "Resume",
         "linkClass": "info-link",
-        "link": "./data/Ratchagree_A_resume.pdf",
+        "link": "https://ratchagreea.github.io/my-portfolio-webpage/#/src/file/Ratchagree_A_resume.pdf",
         "iconClass": "fa-solid fa-file-arrow-down"
     },
     "langSkillInfo": [
@@ -161,10 +161,10 @@
             "iconClass": "fab fa-facebook-square"
         },
         {
-            "title": "Twitter",
+            "title": "linkedin",
             "linkClass": "contact-link",
-            "link": "https://twitter.com/",
-            "iconClass": "fab fa-twitter"
+            "link": "https://www.linkedin.com/in/ratchagree-amornlikitsin-55374222a/",
+            "iconClass": "fa-brands fa-linkedin"
         },
         {
             "title": "GitHub",
