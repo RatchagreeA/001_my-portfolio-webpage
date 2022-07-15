@@ -16,6 +16,7 @@ function App() {
     const proSkillInfo = myData.proSkillInfo;
     const eduInfo = myData.eduInfo;
     const workInfo = myData.workInfo;
+    const awardInfo = myData.awardInfo;
     const projectInfo = myData.projectInfo;
     const showAll = myData.showAll;
     const contactInfo = myData.contactInfo;
@@ -116,6 +117,16 @@ function App() {
                             </h2>
                         </div>
                         <ExpDetail Info={workInfo} uuid={uuidv4} />
+                    </div>
+
+                    <div className="exp">
+                        <div className="exp-type">
+                            <h2>
+                                <i className="fa-solid fa-award"></i>
+                                Awards & Achievements
+                            </h2>
+                        </div>
+                        <ExpDetail Info={awardInfo} uuid={uuidv4} />
                     </div>
                 </div>
             </section>

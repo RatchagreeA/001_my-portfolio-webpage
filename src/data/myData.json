@@ -100,6 +100,18 @@
             ]
         }
     ],
+    "awardInfo": [
+        {
+            "topic": "",
+            "detail": "2018 : ENGR Academic Excellence Award",
+            "list": []
+        },
+        {
+            "topic": "",
+            "detail": "2019 : Certificates of Participation in The TESA TopGun Rally 2019 by Thai Embedded Systems Association (TESA)",
+            "list": []
+        }
+    ],
     "projectInfo": [
         {
             "title": "25 + 5 Clock",

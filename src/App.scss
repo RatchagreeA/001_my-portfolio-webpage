@@ -229,7 +229,7 @@ a {
         justify-content: space-between;
         align-items: flex-start;
         .exp-type {
-            width: 20rem;
+            width: 23rem;
             height: 100%;
             font-size: 1.25rem;
             i {
@@ -402,16 +402,16 @@ a {
         justify-content: center;
     }
     .exp-container {
+        width: 80%;
         padding: 5rem 1rem 5rem 5rem;
         .exp {
             flex-direction: column;
+            .detail-container {
+                margin-top: 0.5rem;
+                margin-left: 4.5rem;
+                width: 90%;
+            }
         }
-    }
-
-    .detail-container {
-        margin-top: 0.5rem;
-        margin-left: 4.5rem;
-        width: 90%;
     }
 }
 
