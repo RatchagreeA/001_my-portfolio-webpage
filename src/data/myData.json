@@ -139,6 +139,11 @@
             "img": "https://codepen.io/ratchagreea/pen/ExQMmXa/image/small.png"
         },
         {
+            "title": "Income - Expense",
+            "link": "https://codepen.io/ratchagreea/pen/GRxroXx",
+            "img": "https://codepen.io/ratchagreea/pen/GRxroXx/image/small.png"
+        },
+        {
             "title": "Product Landing Page",
             "link": "https://codepen.io/ratchagreea/pen/zYpQZmB",
             "img": "https://codepen.io/ratchagreea/pen/zYpQZmB/image/small.png"
@@ -152,11 +157,6 @@
             "title": "Technical Documentation Page",
             "link": "https://codepen.io/ratchagreea/pen/qBxWypY",
             "img": "https://codepen.io/ratchagreea/pen/qBxWypY/image/small.png"
-        },
-        {
-            "title": "Tribute Page",
-            "link": "https://codepen.io/ratchagreea/pen/XWVoWrb",
-            "img": "https://codepen.io/ratchagreea/pen/XWVoWrb/image/small.png"
         }
     ],
     "showAll": {
@@ -166,12 +166,6 @@
         "iconClass": "fa-solid fa-folder-open"
     },
     "contactInfo": [
-        {
-            "title": "Facebook",
-            "linkClass": "contact-link",
-            "link": "https://facebook.com/",
-            "iconClass": "fab fa-facebook-square"
-        },
         {
             "title": "linkedin",
             "linkClass": "contact-link",
@@ -183,6 +177,12 @@
             "linkClass": "contact-link",
             "link": "https://github.com/RatchagreeA",
             "iconClass": "fab fa-github"
+        },
+        {
+            "title": "CodePen",
+            "linkClass": "contact-link",
+            "link": "https://codepen.io/ratchagreea",
+            "iconClass": "fa-brands fa-codepen"
         },
         {
             "title": "Send a mail",
