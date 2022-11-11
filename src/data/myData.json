@@ -1,4 +1,9 @@
 {
+    "introInfo": {
+        "h1": "Hi, I am Ratchagree A.",
+        "h4": "a software engineer",
+        "p": "I enjoy learning new things and write programs to solve problems and improve my skills. I am a fast learner and problem solver with strong communication skills. I am looking for an opportunity to improve my knowledge and skills to become more professional."
+    },
     "resumeInfo": {
         "title": "Resume",
         "linkClass": "info-link",

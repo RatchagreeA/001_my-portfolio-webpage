@@ -10,6 +10,7 @@ import ContactLink from "./components/ContactLink";
 import BtnDownload from "./components/BtnDownload";
 
 function App() {
+    const introInfo = myData.introInfo;
     const resumeInfo = myData.resumeInfo;
     const cvInfo = myData.cvInfo;
     const langSkillInfo = myData.langSkillInfo;
@@ -55,15 +56,9 @@ function App() {
                 </div>
                 <div className="intro-container">
                     <div className="intro-txt">
-                        <h1>Hi, I am Ratchagree A.</h1>
-                        <h4>a software engineer</h4>
-                        <p>
-                            I enjoy learning new things and write programs to
-                            solve problems and improve my skills. I am a fast
-                            learner and problem solver with strong communication
-                            skills. I am looking for an opportunity to improve
-                            my knowledge and skills to become more professional.
-                        </p>
+                        <h1>{introInfo.h1}</h1>
+                        <h4>{introInfo.h4}</h4>
+                        <p>{introInfo.p}</p>
                     </div>
                     <div className="btn-container">
                         <BtnDownload Info={resumeInfo} key={uuidv4()} />
