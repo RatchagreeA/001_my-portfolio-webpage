@@ -2,7 +2,13 @@
     "resumeInfo": {
         "title": "Resume",
         "linkClass": "info-link",
-        "link": "https://drive.google.com/uc?export=download&id=1kAcLoWS1vTyBMn3FgfmW9qRpruKEs4Yx",
+        "link": "https://drive.google.com/uc?export=download&id=1qhwszb02xvpydikvnJNQvB7en-7KN0N_",
+        "iconClass": "fa-solid fa-file-arrow-down"
+    },
+    "cvInfo": {
+        "title": "Curriculum Vitae (CV)",
+        "linkClass": "info-link",
+        "link": "https://drive.google.com/uc?export=download&id=1-xWigbAwL1KHAmhYjSPxIyKOShSxBIRB",
         "iconClass": "fa-solid fa-file-arrow-down"
     },
     "langSkillInfo": [
@@ -12,7 +18,7 @@
         },
         {
             "topic": "English",
-            "detail": "Intermediate speak, read and write"
+            "detail": "Intermediate speaking and writing"
         },
         {
             "topic": "Japanese",
@@ -36,11 +42,19 @@
     "proSkillInfo": [
         {
             "topic": "",
-            "detail": "HTML5, CSS3, JavaScript"
+            "detail": "HTML, CSS, JavaScript"
         },
         {
             "topic": "",
             "detail": "ReactJS"
+        },
+        {
+            "topic": "",
+            "detail": "NodeJS"
+        },
+        {
+            "topic": "",
+            "detail": "PostgreSQL, MongoDB"
         },
         {
             "topic": "",
@@ -56,26 +70,18 @@
         },
         {
             "topic": "",
-            "detail": "VBA Excel"
-        },
-        {
-            "topic": "",
             "detail": "MATLAB (m-script)"
-        },
-        {
-            "topic": "",
-            "detail": "Simulink, Stateflow"
         }
     ],
     "eduInfo": [
         {
             "topic": "Thammasat University",
-            "detail": "Bachelor’s Degree in Electrical Engineering (2015 – 2019)",
+            "detail": "2015 - 2019: Bachelor’s Degree in Electrical Engineering (Second Class Honors)",
             "list": []
         },
         {
             "topic": "Rittiyawannalai School, Bangkok",
-            "detail": "Certificate of General Education (2009 – 2015)",
+            "detail": "2009 - 2015: Certificate of General Education",
             "list": []
         }
     ],
@@ -84,79 +90,70 @@
             "topic": "Software Engineer",
             "detail": "Toyota Tsusho Denso Electronics Thailand Co., Ltd (2019 - Present)",
             "list": [
-                "Development and Testing on ECU software (Embedded) by using MATLAB, Simulink and C language",
-                "Create test pattern for software testing to confirm functional of software work product",
-                "Develop tool for support automate task by using M-script and VBA Excel",
-                "Organize collaboration activity with the university to promote the company"
+                "Requirement gathering from customers, investigate and create confirmation document",
+                "Design, Development and Testing software",
+                "Create test patterns for software testing to ensure the software's functionality",
+                "Coordinate with university partners and customers to organize collaboration activity",
+                "Create tools for automation by using M-Script, Python and VBA"
             ]
         },
         {
             "topic": "Trainee",
             "detail": "Shinetsu Works Co., Ltd. (2018 : Jun – Aug)",
             "list": [
-                "Participate industrial Internship Program in Japan",
-                "Operate product assembly line",
-                "Products testing"
+                "Attend the introduction class for exchange students for the Industrial Internship Program at Nagaoka University of Technology, Japan",
+                "Training at an industrial factory, operating line production, and testing the product",
+                "Present internship report to supervisor at Nagaoka University of Technology, Japan"
             ]
         }
     ],
     "awardInfo": [
         {
             "topic": "",
-            "detail": "2018 : ENGR Academic Excellence Award",
+            "detail": "2020: Best Commitment Award (Toyota Tsusho Denso Electronics Thailand Co., Ltd.)",
             "list": []
         },
         {
             "topic": "",
-            "detail": "2019 : Certificates of Participation in The TESA TopGun Rally 2019 by Thai Embedded Systems Association (TESA)",
+            "detail": "2019: Certificates of Participation in The TESA Top Gun Rally 2019 by Thai Embedded Systems Association (TESA)",
+            "list": []
+        },
+        {
+            "topic": "",
+            "detail": "2018: ENGR Academic Excellence Award (Thammasat University)",
             "list": []
         }
     ],
     "projectInfo": [
         {
             "title": "25 + 5 Clock",
-            "link": "https://codepen.io/ratchagreea/pen/PoRNgrq",
+            "link": "https://ratchagreea.github.io/006_timer",
             "img": "https://codepen.io/ratchagreea/pen/PoRNgrq/image/small.png"
         },
         {
             "title": "Calculator",
-            "link": "https://codepen.io/ratchagreea/pen/jOzPNBR",
+            "link": "https://ratchagreea.github.io/005_calculator",
             "img": "https://codepen.io/ratchagreea/pen/jOzPNBR/image/small.png"
         },
         {
+            "title": "Income - Expense",
+            "link": "https://ratchagreea.github.io/007_income-expenses",
+            "img": "https://codepen.io/ratchagreea/pen/GRxroXx/image/small.png"
+        },
+        {
             "title": "Drum Machine",
-            "link": "https://codepen.io/ratchagreea/pen/rNdBxEW",
+            "link": "https://ratchagreea.github.io/004_drum-machine",
             "img": "https://codepen.io/ratchagreea/pen/rNdBxEW/image/small.png"
         },
         {
             "title": "Random Quote Machine",
-            "link": "https://codepen.io/ratchagreea/pen/XWZxmoL",
+            "link": "https://ratchagreea.github.io/002_random-quote/",
             "img": "https://codepen.io/ratchagreea/pen/XWZxmoL/image/small.png"
         },
         {
             "title": "Markdown Previewer",
-            "link": "https://codepen.io/ratchagreea/pen/ExQMmXa",
+            "link": "https://ratchagreea.github.io/003_markdown-previewer",
             "img": "https://codepen.io/ratchagreea/pen/ExQMmXa/image/small.png"
-        },
-        {
-            "title": "Income - Expense",
-            "link": "https://codepen.io/ratchagreea/pen/GRxroXx",
-            "img": "https://codepen.io/ratchagreea/pen/GRxroXx/image/small.png"
-        },
-        {
-            "title": "Product Landing Page",
-            "link": "https://codepen.io/ratchagreea/pen/zYpQZmB",
-            "img": "https://codepen.io/ratchagreea/pen/zYpQZmB/image/small.png"
-        },
-        {
-            "title": "Survey Form",
-            "link": "https://codepen.io/ratchagreea/pen/WNdmKYa",
-            "img": "https://codepen.io/ratchagreea/pen/WNdmKYa/image/small.png"
-        },
-        {
-            "title": "Technical Documentation Page",
-            "link": "https://codepen.io/ratchagreea/pen/qBxWypY",
-            "img": "https://codepen.io/ratchagreea/pen/qBxWypY/image/small.png"
         }
     ],
     "showAll": {

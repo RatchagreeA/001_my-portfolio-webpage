@@ -11,6 +11,7 @@ import BtnDownload from "./components/BtnDownload";
 
 function App() {
     const resumeInfo = myData.resumeInfo;
+    const cvInfo = myData.cvInfo;
     const langSkillInfo = myData.langSkillInfo;
     const personalInfo = myData.personalInfo;
     const proSkillInfo = myData.proSkillInfo;
@@ -54,18 +55,19 @@ function App() {
                 </div>
                 <div className="intro-container">
                     <div className="intro-txt">
-                        <h1>Hi, I am Ratchagree</h1>
+                        <h1>Hi, I am Ratchagree A.</h1>
                         <h4>a software engineer</h4>
                         <p>
-                            I enjoy learning new knowledge and programming, I am
-                            a fast learner and problem solver with strong
-                            communication skill. I am looking for an opportunity
-                            to improve my knowledge and skill to become a
-                            professional.
+                            I enjoy learning new things and write programs to
+                            solve problems and improve my skills. I am a fast
+                            learner and problem solver with strong communication
+                            skills. I am looking for an opportunity to improve
+                            my knowledge and skills to become more professional.
                         </p>
                     </div>
                     <div className="btn-container">
                         <BtnDownload Info={resumeInfo} key={uuidv4()} />
+                        <BtnDownload Info={cvInfo} key={uuidv4()} />
                     </div>
                 </div>
             </section>
@@ -87,7 +89,7 @@ function App() {
                     </div>
 
                     <div className="info Programming-skill">
-                        <h2>Programming skills</h2>
+                        <h2>Computer skills</h2>
                         <InfoDetail Info={proSkillInfo} uuid={uuidv4} />
                     </div>
                 </div>
