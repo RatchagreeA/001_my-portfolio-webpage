@@ -1,202 +1,79 @@
 {
     "introInfo": {
-        "h1": "Hi, I am Ratchagree A.",
-        "h4": "a software engineer",
-        "p": "I enjoy learning new things and write programs to solve problems and improve my skills. I am a fast learner and problem solver with strong communication skills. I am looking for an opportunity to improve my knowledge and skills to become more professional."
+        "h1": "",
+        "h4": "",
+        "p": ""
     },
     "resumeInfo": {
-        "title": "Resume",
-        "linkClass": "info-link",
-        "link": "https://drive.google.com/uc?export=download&id=1qhwszb02xvpydikvnJNQvB7en-7KN0N_",
-        "iconClass": "fa-solid fa-file-arrow-down"
+        "title": "",
+        "linkClass": "",
+        "link": "",
+        "iconClass": ""
     },
     "cvInfo": {
-        "title": "Curriculum Vitae (CV)",
-        "linkClass": "info-link",
-        "link": "https://drive.google.com/uc?export=download&id=1-xWigbAwL1KHAmhYjSPxIyKOShSxBIRB",
-        "iconClass": "fa-solid fa-file-arrow-down"
+        "title": "",
+        "linkClass": "",
+        "link": "",
+        "iconClass": ""
     },
     "langSkillInfo": [
         {
-            "topic": "Thai",
-            "detail": "Native speaker"
-        },
-        {
-            "topic": "English",
-            "detail": "Intermediate speaking and writing"
-        },
-        {
-            "topic": "Japanese",
-            "detail": "Japanese-Language Proficiency Test Level N3"
+            "topic": "",
+            "detail": ""
         }
     ],
     "personalInfo": [
         {
-            "topic": "Name",
-            "detail": "Ratchagree Amornlikitsin"
-        },
-        {
-            "topic": "Date of birth",
-            "detail": "12 March 1997"
-        },
-        {
-            "topic": "Email",
-            "detail": "ratchagree@gmail.com"
+            "topic": "",
+            "detail": ""
         }
     ],
     "proSkillInfo": [
         {
             "topic": "",
-            "detail": "HTML, CSS, JavaScript"
-        },
-        {
-            "topic": "",
-            "detail": "ReactJS"
-        },
-        {
-            "topic": "",
-            "detail": "NodeJS"
-        },
-        {
-            "topic": "",
-            "detail": "PostgreSQL, MongoDB"
-        },
-        {
-            "topic": "",
-            "detail": "Python"
-        },
-        {
-            "topic": "",
-            "detail": "Java"
-        },
-        {
-            "topic": "",
-            "detail": "C"
-        },
-        {
-            "topic": "",
-            "detail": "MATLAB (m-script)"
+            "detail": ""
         }
     ],
     "eduInfo": [
         {
-            "topic": "Thammasat University",
-            "detail": "2015 - 2019: Bachelor’s Degree in Electrical Engineering (Second Class Honors)",
-            "list": []
-        },
-        {
-            "topic": "Rittiyawannalai School, Bangkok",
-            "detail": "2009 - 2015: Certificate of General Education",
+            "topic": "",
+            "detail": "",
             "list": []
         }
     ],
     "workInfo": [
         {
-            "topic": "Software Engineer",
-            "detail": "Toyota Tsusho Denso Electronics Thailand Co., Ltd (2019 - Present)",
-            "list": [
-                "Requirement gathering from customers, investigate and create confirmation document",
-                "Design, Development and Testing software",
-                "Create test patterns for software testing to ensure the software's functionality",
-                "Coordinate with university partners and customers to organize collaboration activity",
-                "Create tools for automation by using M-Script, Python and VBA"
-            ]
-        },
-        {
-            "topic": "Trainee",
-            "detail": "Shinetsu Works Co., Ltd. (2018 : Jun – Aug)",
-            "list": [
-                "Attend the introduction class for exchange students for the Industrial Internship Program at Nagaoka University of Technology, Japan",
-                "Training at an industrial factory, operating line production, and testing the product",
-                "Present internship report to supervisor at Nagaoka University of Technology, Japan"
-            ]
+            "topic": "",
+            "detail": "",
+            "list": [""]
         }
     ],
     "awardInfo": [
         {
             "topic": "",
-            "detail": "2020: Best Commitment Award (Toyota Tsusho Denso Electronics Thailand Co., Ltd.)",
-            "list": []
-        },
-        {
-            "topic": "",
-            "detail": "2019: Certificates of Participation in The TESA Top Gun Rally 2019 by Thai Embedded Systems Association (TESA)",
-            "list": []
-        },
-        {
-            "topic": "",
-            "detail": "2018: ENGR Academic Excellence Award (Thammasat University)",
+            "detail": "",
             "list": []
         }
     ],
     "projectInfo": [
         {
-            "title": "25 + 5 Clock",
-            "link": "https://ratchagreea.github.io/006_timer",
-            "img": "https://codepen.io/ratchagreea/pen/PoRNgrq/image/small.png"
-        },
-        {
-            "title": "Calculator",
-            "link": "https://ratchagreea.github.io/005_calculator",
-            "img": "https://codepen.io/ratchagreea/pen/jOzPNBR/image/small.png"
-        },
-        {
-            "title": "Income - Expense",
-            "link": "https://ratchagreea.github.io/007_income-expenses",
-            "img": "https://codepen.io/ratchagreea/pen/GRxroXx/image/small.png"
-        },
-        {
-            "title": "Drum Machine",
-            "link": "https://ratchagreea.github.io/004_drum-machine",
-            "img": "https://codepen.io/ratchagreea/pen/rNdBxEW/image/small.png"
-        },
-        {
-            "title": "Random Quote Machine",
-            "link": "https://ratchagreea.github.io/002_random-quote/",
-            "img": "https://codepen.io/ratchagreea/pen/XWZxmoL/image/small.png"
-        },
-        {
-            "title": "Markdown Previewer",
-            "link": "https://ratchagreea.github.io/003_markdown-previewer",
-            "img": "https://codepen.io/ratchagreea/pen/ExQMmXa/image/small.png"
+            "title": "",
+            "link": "",
+            "img": ""
         }
     ],
     "showAll": {
-        "title": "Show all",
-        "link": "https://codepen.io/ratchagreea",
-        "linkClass": "btn-show-all",
-        "iconClass": "fa-solid fa-folder-open"
+        "title": "",
+        "link": "",
+        "linkClass": "",
+        "iconClass": ""
     },
     "contactInfo": [
         {
-            "title": "linkedin",
-            "linkClass": "contact-link",
-            "link": "https://www.linkedin.com/in/ratchagree-amornlikitsin-55374222a/",
-            "iconClass": "fa-brands fa-linkedin"
-        },
-        {
-            "title": "GitHub",
-            "linkClass": "contact-link",
-            "link": "https://github.com/RatchagreeA",
-            "iconClass": "fab fa-github"
-        },
-        {
-            "title": "CodePen",
-            "linkClass": "contact-link",
-            "link": "https://codepen.io/ratchagreea",
-            "iconClass": "fa-brands fa-codepen"
-        },
-        {
-            "title": "Send a mail",
-            "linkClass": "contact-link",
-            "link": "mailto:ratchagree@gmail.com",
-            "iconClass": "fas fa-at"
-        },
-        {
-            "title": "Call me",
-            "linkClass": "contact-link",
-            "link": "tel:+66892358488",
-            "iconClass": "fas fa-mobile-alt"
+            "title": "",
+            "linkClass": "",
+            "link": "",
+            "iconClass": ""
         }
     ]
 }

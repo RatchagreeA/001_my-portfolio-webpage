@@ -1,6 +1,6 @@
 import "./App.scss";
 import { v4 as uuidv4 } from "uuid";
-import myImg from "./img/myImg.jpg";
+import { useState, useEffect } from "react";
 import myData from "./data/myData.json";
 import InfoDetail from "./components/InfoDetail";
 import ExpDetail from "./components/ExpDetail";
@@ -10,18 +10,54 @@ import ContactLink from "./components/ContactLink";
 import BtnDownload from "./components/BtnDownload";
 
 function App() {
-    const introInfo = myData.introInfo;
-    const resumeInfo = myData.resumeInfo;
-    const cvInfo = myData.cvInfo;
-    const langSkillInfo = myData.langSkillInfo;
-    const personalInfo = myData.personalInfo;
-    const proSkillInfo = myData.proSkillInfo;
-    const eduInfo = myData.eduInfo;
-    const workInfo = myData.workInfo;
-    const awardInfo = myData.awardInfo;
-    const projectInfo = myData.projectInfo;
-    const showAll = myData.showAll;
-    const contactInfo = myData.contactInfo;
+    const URL_DATA = process.env.REACT_APP_API_DATA;
+    const URL_IMG = process.env.REACT_APP_API_IMG;
+    const [newData, setNewData] = useState(myData);
+    const [imgSrc, setImgSrc] = useState("");
+    const [introInfo, setIntroInfo] = useState(myData.introInfo);
+    const [resumeInfo, setResumeInfo] = useState(myData.resumeInfo);
+    const [cvInfo, setCvInfo] = useState(myData.cvInfo);
+    const [langSkillInfo, setLangSkillInfo] = useState(myData.langSkillInfo);
+    const [personalInfo, setPersonalInfo] = useState(myData.personalInfo);
+    const [proSkillInfo, setProSkillInfo] = useState(myData.proSkillInfo);
+    const [eduInfo, setEduInfo] = useState(myData.eduInfo);
+    const [workInfo, setWorkInfo] = useState(myData.workInfo);
+    const [awardInfo, setAwardInfo] = useState(myData.awardInfo);
+    const [projectInfo, setProjectInfo] = useState(myData.projectInfo);
+    const [showAll, setShowAll] = useState(myData.showAll);
+    const [contactInfo, setContactInfo] = useState(myData.contactInfo);
+
+    const fetchData = async (url) => {
+        try {
+            const res = await fetch(url);
+            const data = await res.json();
+            setNewData(data);
+        } catch (err) {
+            console.log(err);
+        }
+    };
+    useEffect(() => {
+        fetchData(URL_DATA);
+    }, []);
+    useEffect(() => {
+        setState(newData);
+    }, [newData]);
+    const setState = (myData) => {
+        setImgSrc(URL_IMG);
+        setIntroInfo(myData.introInfo);
+        setResumeInfo(myData.resumeInfo);
+        setCvInfo(myData.cvInfo);
+        setLangSkillInfo(myData.langSkillInfo);
+        setPersonalInfo(myData.personalInfo);
+        setProSkillInfo(myData.proSkillInfo);
+        setEduInfo(myData.eduInfo);
+        setWorkInfo(myData.workInfo);
+        setAwardInfo(myData.awardInfo);
+        setProjectInfo(myData.projectInfo);
+        setShowAll(myData.showAll);
+        setContactInfo(myData.contactInfo);
+    };
+
     return (
         <div className="container">
             {/* <!-- START NAV SECTION --> */}
@@ -52,7 +88,7 @@ function App() {
 
             <section id="welcome-section" className="welcome">
                 <div className="pro-img">
-                    <img src={myImg} alt="profile-img" />
+                    <img src={imgSrc} alt="profile-img" />
                 </div>
                 <div className="intro-container">
                     <div className="intro-txt">
