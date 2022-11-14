@@ -12,7 +12,6 @@ import BtnDownload from "./components/BtnDownload";
 function App() {
     const URL_DATA = process.env.REACT_APP_API_DATA;
     const URL_IMG = process.env.REACT_APP_API_IMG;
-    const [newData, setNewData] = useState(myData);
     const [imgSrc, setImgSrc] = useState("");
     const [introInfo, setIntroInfo] = useState(myData.introInfo);
     const [resumeInfo, setResumeInfo] = useState(myData.resumeInfo);
@@ -27,21 +26,6 @@ function App() {
     const [showAll, setShowAll] = useState(myData.showAll);
     const [contactInfo, setContactInfo] = useState(myData.contactInfo);
 
-    const fetchData = async (url) => {
-        try {
-            const res = await fetch(url);
-            const data = await res.json();
-            setNewData(data);
-        } catch (err) {
-            console.log(err);
-        }
-    };
-    useEffect(() => {
-        fetchData(URL_DATA);
-    }, []);
-    useEffect(() => {
-        setState(newData);
-    }, [newData]);
     const setState = (myData) => {
         setImgSrc(URL_IMG);
         setIntroInfo(myData.introInfo);
@@ -57,6 +41,18 @@ function App() {
         setShowAll(myData.showAll);
         setContactInfo(myData.contactInfo);
     };
+    const fetchData = async (url) => {
+        try {
+            const res = await fetch(url);
+            const data = await res.json();
+            setState(data);
+        } catch (err) {
+            console.log(err);
+        }
+    };
+    useEffect(() => {
+        fetchData(URL_DATA);
+    }, []);
 
     return (
         <div className="container">
